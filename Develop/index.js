@@ -40,22 +40,22 @@ const promptManager = () => {
         {
             type: 'input',
             name:  'name',
-            message: 'what is your name',
+            message: 'what is your name?',
         },
         {
             type: 'input',
             name: 'id',
-            message: 'what is your id number',
+            message: 'what is your id number?',
         },
         {
             type: 'input',
             name: 'email',
-            message: 'what is your email',
+            message: 'what is your email?',
         },
         {
             type: 'input',
             name: 'office',
-            message: 'what is your office number',
+            message: 'what is your office number?',
         },
     ]).then(answers => {
         console.log(answers);
@@ -64,3 +64,68 @@ const promptManager = () => {
         promptMenu();
     })
 }; 
+const promptEngineer = () => {
+    return inquirer.prompt ([
+        {
+            type: 'input',
+            name:  'name',
+            message: 'what is your name?',
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: 'what is your id number?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'what is your email?',
+        },
+        {
+            type: 'input',
+            name: 'office',
+            message: 'what is your github username?',
+        },
+    ]).then(answers => {
+        console.log(answers);
+        const engineer = new Engineer(answers.name, answers.id, answers.email, answers.office);
+        teamMembers.push(engineer);
+        promptMenu();
+    })
+}; 
+const promptIntern = () => {
+    return inquirer.prompt ([
+        {
+            type: 'input',
+            name:  'name',
+            message: 'what is your name?',
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: 'what is your id number?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'what is your email?',
+        },
+        {
+            type: 'input',
+            name: 'office',
+            message: 'what school did you go to?',
+        },
+    ]).then(answers => {
+        console.log(answers);
+        const intern = new Intern(answers.name, answers.id, answers.email, answers.office);
+        teamMembers.push(intern);
+        promptMenu();
+    })
+}; 
+const buildTeam = () => {
+    console.log('your team is built');
+    if(!fs.existsSync(OUTPUT_DIR)) {
+    }
+    fs.mkdirSync(OUTPUT_DIR)
+}
+promptManager();
