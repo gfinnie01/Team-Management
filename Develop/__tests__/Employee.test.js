@@ -12,3 +12,7 @@ test('constroctor values of employee object', () => {
 test('do we get a name from getName', ()=>{
     expect(employee.getName()).toBe('grant')
 });
+
+test('do we get Id from getId', ()=> {
+    expect(employee.getEmail()).toBe('grant@gmil.com')
+})
