@@ -15,7 +15,7 @@ test('do we get a name from getName', ()=>{
 });
 
 test('do we get Id from getId', ()=> {
-    expect(manager.getEmail()).toBe('grant@gmil.com')
+    expect(manager.getEmail()).toBe('grant@gmail.com')
 });
 test('do we get the office number from getOfficeNumber', () => {
     expect(manager.getOfficeNumber()).toBe('2001')

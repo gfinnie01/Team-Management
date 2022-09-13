@@ -1,12 +1,10 @@
-const Employee = require("../lib/Employee");
-const employee = new Employee('grant', '576', 'grant@gmail.com')
-describe("Employee", () => {
+const Employee = require('../lib/Employee');
+const employee = new Employee('grant', '576', 'grant@gmail.com');
 
-});
 test('constroctor values of employee object', () => {
-    expect(epmployee.name).toBe('grant');
-    expect(epmployee.id).toBe('576');
-    expect(epmployee.email).toBe('grant@gmail.com');
+    expect(employee.name).toBe('grant');
+    expect(employee.id).toBe('576');
+    expect(employee.email).toBe('grant@gmail.com');
 });
 
 test('do we get a name from getName', ()=>{
@@ -14,5 +12,5 @@ test('do we get a name from getName', ()=>{
 });
 
 test('do we get Id from getId', ()=> {
-    expect(employee.getEmail()).toBe('grant@gmil.com')
+    expect(employee.getEmail()).toBe('grant@gmail.com')
 });
