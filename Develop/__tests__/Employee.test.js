@@ -15,4 +15,4 @@ test('do we get a name from getName', ()=>{
 
 test('do we get Id from getId', ()=> {
     expect(employee.getEmail()).toBe('grant@gmil.com')
-})
+});
