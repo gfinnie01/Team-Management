@@ -27,9 +27,6 @@ const promptMenu = () => {
                 case 'add a intern':
                     promptIntern();
                     break;
-                case 'add a manager':
-                    promptManager();
-                    break;
                 default:
                     buildTeam();
             }
