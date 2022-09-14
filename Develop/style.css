@@ -1,0 +1,17 @@
+ body{
+    background-color: darkgray;
+ }
+ header{
+    color:blue;
+    text-align: center;
+ }
+.container{
+   color:blue;
+   margin: 30px;
+   flex-direction: row;
+   text-align: center;
+   border: 6px solid #B22222;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
