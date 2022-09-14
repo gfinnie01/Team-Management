@@ -17,6 +17,6 @@ test('do we get a name from getName', ()=>{
 test('do we get Id from getId', ()=> {
     expect(engineer.getEmail()).toBe('grant@gmail.com')
 });
-test('do we get the school number from getSchool', () => {
+test('do we get the github number from getGithub', () => {
     expect(engineer.getGithub()).toBe('grant01')
 });
